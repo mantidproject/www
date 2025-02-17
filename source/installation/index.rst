@@ -6,42 +6,12 @@ Installation
 Here you can find instructions on how to install Mantid on various platforms.
 We currently offer:
 
-- :ref:`full installers <installation_full>` bundling
-  all components (64-bit, Intel)
 - :ref:`Conda packages <installation_conda>` for use with the
   `conda package manager <https://docs.conda.io/en/latest/>`__ (64-bit, Intel)
+- :ref:`full installers <installation_full>` bundling
+  all components (64-bit, Intel)
 
 Please see the relevant sections for installation instructions.
-
-.. _installation_full:
-
-Full Installers
----------------
-
-Latest Release
-##############
-
-.. raw:: html
-   :file: latest.html
-
-Instructions:
-
-- :doc:`Windows <windows>`
-- :doc:`macOS <macos>`
-- :doc:`Linux <linux>`: Starting with version ``6.4`` the above `.tar.xz` file for Linux can
-  simply be extracted and run on any modern Linux (>2010) system.
-  Prior and up to versions ``6.4``, ``rpm`` and ``deb`` versions are available for
-  Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.
-
-Nightly Build
-#############
-
-Go to our `releases page on Github <https://github.com/mantidproject/mantid/releases>`__,
-find the latest nightly and download the relevant package.
-
-.. include:: ./nightly_build_warning.txt
-
-----
 
 .. _installation_conda:
 
@@ -127,6 +97,38 @@ Then you can open Mantid with the following command:
 .. code-block:: sh
 
    workbench
+
+----
+
+.. _installation_full:
+
+Full Installers
+---------------
+
+Latest Release
+##############
+
+.. raw:: html
+   :file: latest.html
+
+Instructions:
+
+- :doc:`Windows <windows>`
+- :doc:`macOS <macos>`
+- :doc:`Linux <linux>`: Starting with version ``6.4`` the above `.tar.xz` file for Linux can
+  simply be extracted and run on any modern Linux (>2010) system.
+  Prior and up to versions ``6.4``, ``rpm`` and ``deb`` versions are available for
+  Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.
+
+Nightly Build
+#############
+
+Go to our `releases page on Github <https://github.com/mantidproject/mantid/releases>`__,
+find the latest nightly and download the relevant package.
+
+.. include:: ./nightly_build_warning.txt
+
+----
 
 Sample Data
 -----------
