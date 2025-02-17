@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=468c6cff" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=cc2ca459" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -316,9 +316,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -366,51 +371,12 @@
 <p>Here you can find instructions on how to install Mantid on various platforms.
 We currently offer:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#installation-full"><span class="std std-ref">full installers</span></a> bundling
-all components (64-bit, Intel)</p></li>
 <li><p><a class="reference internal" href="#installation-conda"><span class="std std-ref">Conda packages</span></a> for use with the
 <a class="reference external" href="https://docs.conda.io/en/latest/">conda package manager</a> (64-bit, Intel)</p></li>
+<li><p><a class="reference internal" href="#installation-full"><span class="std std-ref">full installers</span></a> bundling
+all components (64-bit, Intel)</p></li>
 </ul>
 <p>Please see the relevant sections for installation instructions.</p>
-<section id="full-installers">
-<span id="installation-full"></span><h2>Full Installers<a class="headerlink" href="#full-installers" title="Link to this heading">#</a></h2>
-<section id="latest-release">
-<h3>Latest Release<a class="headerlink" href="#latest-release" title="Link to this heading">#</a></h3>
-<!-- This file is generated from the installation-latest.html template -->
-<p>Version: <strong>v6.11.0</strong></p>
-<p>Release Date: <strong>24 October 2024</strong></p>
-<div class="installation-download-buttons">
-    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/MantidWorkbench-6.11.0.exe">Windows 10:<br>
-        MantidWorkbench-6.11.0.exe</a>
-    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/MantidWorkbench-6.11.0.dmg">macOS (10.9+):<br>
-        MantidWorkbench-6.11.0.dmg</a>
-</div>
-<div class="installation-download-buttons">
-    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/mantidworkbench-6.11.0.tar.xz">Linux (2010+)<br>
-        mantidworkbench-6.11.0.tar.xz</a>
-</div><p>Instructions:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="windows.html"><span class="doc">Windows</span></a></p></li>
-<li><p><a class="reference internal" href="macos.html"><span class="doc">macOS</span></a></p></li>
-<li><p><a class="reference internal" href="linux.html"><span class="doc">Linux</span></a>: Starting with version <code class="docutils literal notranslate"><span class="pre">6.4</span></code> the above <cite>.tar.xz</cite> file for Linux can
-simply be extracted and run on any modern Linux (&gt;2010) system.
-Prior and up to versions <code class="docutils literal notranslate"><span class="pre">6.4</span></code>, <code class="docutils literal notranslate"><span class="pre">rpm</span></code> and <code class="docutils literal notranslate"><span class="pre">deb</span></code> versions are available for
-Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.</p></li>
-</ul>
-</section>
-<section id="nightly-build">
-<h3>Nightly Build<a class="headerlink" href="#nightly-build" title="Link to this heading">#</a></h3>
-<p>Go to our <a class="reference external" href="https://github.com/mantidproject/mantid/releases">releases page on Github</a>,
-find the latest nightly and download the relevant package.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Nightly version NOT recommended for production use.
-These packages have passed all automated checks but have only had minimal
-manual testing. Use with caution.</p>
-</div>
-<hr class="docutils" />
-</section>
-</section>
 <section id="conda">
 <span id="installation-conda"></span><h2>Conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h2>
 <p>Our packages are available through our <a class="reference external" href="https://anaconda.org/mantid">mantid</a>
@@ -424,8 +390,8 @@ writing scripts etc.</p></li>
 </ul>
 <p>It is worth noting that versions of Mantid after v6.7 (including the nightly) use
 Python 3.10. Mantid v6.7 and before use Python 3.8.</p>
-<section id="id1">
-<h3>Latest Release<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="latest-release">
+<h3>Latest Release<a class="headerlink" href="#latest-release" title="Link to this heading">#</a></h3>
 <p>It is recommended to use Mambaforge to create and manage a Conda environment for Mantid. Using mamba is preferable over conda as it’s faster and better at resolving dependencies.</p>
 <p>To install Mantid into a new Conda environment use these options:</p>
 <ul class="simple">
@@ -452,8 +418,8 @@ For example if you want to install mantidworkbench use the following command:</p
 </div>
 </section>
 </section>
-<section id="id2">
-<h3>Nightly Build<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="nightly-build">
+<h3>Nightly Build<a class="headerlink" href="#nightly-build" title="Link to this heading">#</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Nightly version NOT recommended for production use.
@@ -478,8 +444,48 @@ you must first activate your Conda environment:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>workbench
 </pre></div>
 </div>
+<hr class="docutils" />
 </section>
 </section>
+<section id="full-installers">
+<span id="installation-full"></span><h2>Full Installers<a class="headerlink" href="#full-installers" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Latest Release<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<!-- This file is generated from the installation-latest.html template -->
+<p>Version: <strong>v6.11.0</strong></p>
+<p>Release Date: <strong>24 October 2024</strong></p>
+<div class="installation-download-buttons">
+    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/MantidWorkbench-6.11.0.exe">Windows 10:<br>
+        MantidWorkbench-6.11.0.exe</a>
+    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/MantidWorkbench-6.11.0.dmg">macOS (10.9+):<br>
+        MantidWorkbench-6.11.0.dmg</a>
+</div>
+<div class="installation-download-buttons">
+    <a class="button latest" href="https://github.com/mantidproject/mantid/releases/download/v6.11.0/mantidworkbench-6.11.0.tar.xz">Linux (2010+)<br>
+        mantidworkbench-6.11.0.tar.xz</a>
+</div><p>Instructions:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="windows.html"><span class="doc">Windows</span></a></p></li>
+<li><p><a class="reference internal" href="macos.html"><span class="doc">macOS</span></a></p></li>
+<li><p><a class="reference internal" href="linux.html"><span class="doc">Linux</span></a>: Starting with version <code class="docutils literal notranslate"><span class="pre">6.4</span></code> the above <cite>.tar.xz</cite> file for Linux can
+simply be extracted and run on any modern Linux (&gt;2010) system.
+Prior and up to versions <code class="docutils literal notranslate"><span class="pre">6.4</span></code>, <code class="docutils literal notranslate"><span class="pre">rpm</span></code> and <code class="docutils literal notranslate"><span class="pre">deb</span></code> versions are available for
+Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Nightly Build<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Go to our <a class="reference external" href="https://github.com/mantidproject/mantid/releases">releases page on Github</a>,
+find the latest nightly and download the relevant package.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Nightly version NOT recommended for production use.
+These packages have passed all automated checks but have only had minimal
+manual testing. Use with caution.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
 <section id="sample-data">
 <h2>Sample Data<a class="headerlink" href="#sample-data" title="Link to this heading">#</a></h2>
 <p>Below we provide links to various sets of sample data for use with Mantid:</p>
@@ -523,18 +529,18 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#full-installers">Full Installers</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latest-release">Latest Release</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nightly-build">Nightly Build</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Latest Release</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latest-release">Latest Release</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-using-mambaforge">Installing using mambaforge</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Nightly Build</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nightly-build">Nightly Build</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-open-mantid-workbench-conda">How to Open Mantid Workbench (Conda)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#full-installers">Full Installers</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Latest Release</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Nightly Build</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-data">Sample Data</a></li>
@@ -542,13 +548,13 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/installation/index.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/installation/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -563,8 +569,8 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -575,7 +581,7 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
 
   <p class="copyright">
     
-      © Copyright 2007-2024 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.
+      © Copyright 2007-2025 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.
       <br/>
     
   </p>
@@ -597,7 +603,8 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

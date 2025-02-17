@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=468c6cff" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=cc2ca459" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -316,9 +316,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -363,75 +368,12 @@
                   
   <section id="linux-packages">
 <h1>Linux Packages<a class="headerlink" href="#linux-packages" title="Link to this heading">#</a></h1>
-<section id="red-hat-centos-7">
-<h2>Red Hat/CentOS 7<a class="headerlink" href="#red-hat-centos-7" title="Link to this heading">#</a></h2>
-<section id="setup">
-<h3>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h3>
-<p>Enable the <a class="reference external" href="https://docs.fedoraproject.org/en-US/epel/#_el7">Extra Packages for Enterprise Linux (EPEL)</a>
-repositories.</p>
-<p>Activate the yum repository for the version of Mantid you require by
-downloading the appropriate repository configuration file and saving it to <code class="docutils literal notranslate"><span class="pre">/etc/yum.repos.d</span></code>:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="_static/isis-rhel.repo">stable release</a></p></li>
-<li><p><a class="reference external" href="_static/isis-rhel-testing.repo">nightly build</a></p></li>
-</ul>
-</section>
-<section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h3>
-<p>Install the version of Mantid you require with:</p>
-<ul class="simple">
-<li><p>stable release: <code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">mantid</span></code>. Installs to <code class="docutils literal notranslate"><span class="pre">/opt/Mantid</span></code></p></li>
-<li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">mantidnightly</span></code>. Installs to <code class="docutils literal notranslate"><span class="pre">/opt/mantidnightly</span></code></p></li>
-</ul>
-</section>
-<section id="run">
-<h3>Run<a class="headerlink" href="#run" title="Link to this heading">#</a></h3>
-<p>To run MantidWorkbench:</p>
-<ul class="simple">
-<li><p>stable release: <code class="docutils literal notranslate"><span class="pre">/opt/Mantid/bin/mantidworkbench</span></code></p></li>
-<li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">/opt/mantidnightly/bin/mantidworkbench</span></code></p></li>
-</ul>
-</section>
-</section>
-<section id="ubuntu">
-<h2>Ubuntu<a class="headerlink" href="#ubuntu" title="Link to this heading">#</a></h2>
-<section id="id1">
-<h3>Setup<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>Enable the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> prerequisites PPA:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-add-repository<span class="w"> </span>ppa:mantid/mantid
-</pre></div>
-</div>
-<p>Add the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> signing key to your key chain:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span>-<span class="w"> </span>http://apt.isis.rl.ac.uk/2E10C193726B7213.asc<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
-</pre></div>
-</div>
-<p>Activate the apt repository for the version of Mantid you require by running:</p>
-<ul class="simple">
-<li><p>stable release: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-add-repository</span> <span class="pre">&quot;deb</span> <span class="pre">[arch=amd64]</span> <span class="pre">http://apt.isis.rl.ac.uk</span> <span class="pre">$(lsb_release</span> <span class="pre">-c</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-f</span> <span class="pre">2)</span> <span class="pre">main&quot;</span></code></p></li>
-<li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-add-repository</span> <span class="pre">&quot;deb</span> <span class="pre">[arch=amd64]</span> <span class="pre">http://apt.isis.rl.ac.uk</span> <span class="pre">$(lsb_release</span> <span class="pre">-c</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-f</span> <span class="pre">2)-testing</span> <span class="pre">main&quot;</span></code></p></li>
-</ul>
-<p>and force an apt update:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-</pre></div>
-</div>
-</section>
-<section id="id2">
-<h3>Installation<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>Install the version of Mantid you require with:</p>
-<ul class="simple">
-<li><p>stable release: <code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span> <span class="pre">mantid</span></code>. Installs to <code class="docutils literal notranslate"><span class="pre">/opt/Mantid</span></code></p></li>
-<li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span> <span class="pre">mantidnightly</span></code>. Installs to <code class="docutils literal notranslate"><span class="pre">/opt/mantidnightly</span></code></p></li>
-</ul>
-</section>
-<section id="id3">
-<h3>Run<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>To run MantidWorkbench:</p>
-<ul class="simple">
-<li><p>stable release: <code class="docutils literal notranslate"><span class="pre">/opt/Mantid/bin/mantidworkbench</span></code></p></li>
-<li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">/opt/mantidnightly/bin/mantidworkbench</span></code></p></li>
-</ul>
-</section>
-</section>
+<p>The steps below will guide you through installation of MantidWorkbench on Linux:</p>
+<ol class="arabic simple">
+<li><p>Unpack the <code class="docutils literal notranslate"><span class="pre">tar.xz</span></code> file using <code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">-xJf</span></code> (e.g <code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">-xJf</span> <span class="pre">mantidworkbench-6.11.tar.xz</span></code>).</p></li>
+<li><p>This will create a directory with the package name (e.g <code class="docutils literal notranslate"><span class="pre">/mantidworkbench-6.11</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> into this directory and run <code class="docutils literal notranslate"><span class="pre">./bin/mantidworkbench</span></code> to launch.</p></li>
+</ol>
 </section>
 
 
@@ -450,36 +392,13 @@ downloading the appropriate repository configuration file and saving it to <code
 
 
   <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#red-hat-centos-7">Red Hat/CentOS 7</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#run">Run</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu">Ubuntu</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Run</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/installation/linux.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/installation/linux.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -494,8 +413,8 @@ downloading the appropriate repository configuration file and saving it to <code
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -506,7 +425,7 @@ downloading the appropriate repository configuration file and saving it to <code
 
   <p class="copyright">
     
-      © Copyright 2007-2024 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.
+      © Copyright 2007-2025 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.
       <br/>
     
   </p>
@@ -528,7 +447,8 @@ downloading the appropriate repository configuration file and saving it to <code
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
