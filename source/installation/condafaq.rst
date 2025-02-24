@@ -16,14 +16,14 @@ Issues
 
 .. _unable_to_find:
 
-Unable to find `mantid` or `mantidworkbench`
+Unable to find ``mantid`` or ``mantidworkbench``
 ############################################
 
 .. code-block:: sh
 
 	PackagesNotFoundError: The following packages are not available from current channels
 
-If you encounter this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing.
+If you encounter this error it may be because you have not included the mantid channel in your download command. Please ensure you include ``-c mantid`` when installing.
 
 Example
 
@@ -58,7 +58,7 @@ available through conda-forge require by running the following command
 
 	mamba search -c mantid mantid --info
 
-To list the currrent depedencies being used in the nightly replace the channel name with `mantid/label/nightly` __.
+To list the currrent depedencies being used in the nightly replace the channel name with ``mantid/label/nightly``.
 
 
 .. _404_error:
@@ -66,7 +66,7 @@ To list the currrent depedencies being used in the nightly replace the channel n
 404 error when trying to install
 ################################
 
-Mantid's dependencies are all available through `conda-forge`. To access this channel please check your `.condarc` file. It should contain the following
+Mantid's dependencies are all available through ``conda-forge``. To access this channel please check your ``.condarc`` file. It should contain the following
 
 .. code-block:: sh
 
@@ -87,7 +87,19 @@ If either of these are in the file then please make sure there are no other chan
 		- https://anaconda.org/mantid
 		- mantid
 
+Qt platform plugin error
+########################
+
+On Windows, if you are met with the following error upon launching ``workbench``
+
+.. code-block:: sh
+
+	qt.qpa.plugin: Could not find the Qt platform plugin "windows" in ""
+	This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Deactivate your environment, reactivate it, and run ``workbench`` again.
+
 Still having problems?
 ######################
 
-If the above has not resolved your problem please post to our `community forum <https://forum.mantidproject.org>` or e-mail the team directly on ``mantid-help@mantidproject.org``.
+If the above has not resolved your problem please post to our `community forum <https://forum.mantidproject.org>`_ or e-mail the team directly on ``mantid-help@mantidproject.org``.
