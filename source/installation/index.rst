@@ -11,7 +11,7 @@ We currently offer:
 - :ref:`full installers <installation_full>` bundling
   all components (64-bit, Intel)
 
-Please see the relevant sections for installation instructions.
+Please see the relevant sections for installation instructions and check our :doc:`troubleshooting page <condafaq>` if you run into difficulties.
 
 .. _installation_conda:
 
@@ -43,8 +43,6 @@ To install Mantid into a new Conda environment use these options:
 
 These options should be followed by the name of the package you want
 to install. This will probably be any library from the ``mantid`` python library
-
-Further installation details are provided below. Please check our :doc:`troubleshooting page <condafaq>` if you run into difficulties.
 
 Installing using mambaforge
 +++++++++++++++++++++++++++++++++++++++++++++++++++
