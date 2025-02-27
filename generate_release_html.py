@@ -1,5 +1,4 @@
-"""Generate the latest.html release information in installation
-"""
+"""Generate the latest.html release information in installation"""
 
 from pathlib import Path
 
