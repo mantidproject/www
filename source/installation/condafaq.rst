@@ -38,22 +38,22 @@ You may also encounter this error when trying to install on Apple silicon device
 Installing on Apple silicon devices
 ###################################
 
-On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from 
+On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from
 v6.13 onwards. Mamba will automatically determine  which package to install
 based on your device.
 
-The processor in your machine can be found by navigating to the ``Apple logo`` 
--> ``About This Mac``. On an Apple Silicon device, the ``Chip`` 
+The processor in your machine can be found by navigating to the ``Apple logo``
+-> ``About This Mac``. On an Apple Silicon device, the ``Chip``
 line will say ``Apple M`` then a number indicating the version of the chip on
 the device. An Intel device will have a ``Processor`` line, followed by some
 details of the specific CPU used in the device.
 
-For versions of mantid prior to v6.13, only x86 packages are available. These 
-can still be used by those with Apple Silicon devices using Rosetta. You will 
-need to `have Rosetta installed <https://support.apple.com/en-gb/102527>`__ and 
+For versions of mantid prior to v6.13, only x86 packages are available. These
+can still be used by those with Apple Silicon devices using Rosetta. You will
+need to `have Rosetta installed <https://support.apple.com/en-gb/102527>`__ and
 precede the mamba commands with ``CONDA_SUBDIR=osx-64``.
 
-For example, if you want to install v6.12 of mantidworkbench, use the following 
+For example, if you want to install v6.12 of mantidworkbench, use the following
 command:
 
 .. code-block:: sh
