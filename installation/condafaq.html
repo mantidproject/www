@@ -392,9 +392,21 @@ To install mambaforge please follow <a class="reference external" href="https://
 </section>
 <section id="installing-on-apple-silicon-devices">
 <span id="osx-install"></span><h3>Installing on Apple silicon devices<a class="headerlink" href="#installing-on-apple-silicon-devices" title="Link to this heading">#</a></h3>
-<p>For macOS we currently only provide x86 packages. These can still be used by those with Apple silicon devices (M1, M2). You will need to have Rosetta installed and precede the setup commands with ‘CONDA_SUBDIR=osx-64’.
-For example if you want to install mantidworkbench use the following command:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">CONDA_SUBDIR</span><span class="o">=</span>osx-64<span class="w"> </span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
+<p>On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from
+v6.13 onwards. Mamba will automatically determine  which package to install
+based on your device.</p>
+<p>The processor in your machine can be found by navigating to the <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">logo</span></code>
+-&gt; <code class="docutils literal notranslate"><span class="pre">About</span> <span class="pre">This</span> <span class="pre">Mac</span></code>. On an Apple Silicon device, the <code class="docutils literal notranslate"><span class="pre">Chip</span></code>
+line will say <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">M</span></code> then a number indicating the version of the chip on
+the device. An Intel device will have a <code class="docutils literal notranslate"><span class="pre">Processor</span></code> line, followed by some
+details of the specific CPU used in the device.</p>
+<p>For versions of mantid prior to v6.13, only x86 packages are available. These
+can still be used by those with Apple Silicon devices using Rosetta. You will
+need to <a class="reference external" href="https://support.apple.com/en-gb/102527">have Rosetta installed</a> and
+precede the mamba commands with <code class="docutils literal notranslate"><span class="pre">CONDA_SUBDIR=osx-64</span></code>.</p>
+<p>For example, if you want to install v6.12 of mantidworkbench, use the following
+command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">CONDA_SUBDIR</span><span class="o">=</span>osx-64<span class="w"> </span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span><span class="nv">mantidworkbench</span><span class="o">=</span><span class="m">6</span>.12
 </pre></div>
 </div>
 </section>

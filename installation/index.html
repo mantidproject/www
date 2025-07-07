@@ -410,8 +410,13 @@ to install. This will probably be any library from the <code class="docutils lit
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
-<p>For macOS we currently only provide x86 packages. These can still be used by those with Apple silicon devices (M1, M2). You will need to have Rosetta installed and precede the setup commands with ‘CONDA_SUBDIR=osx-64’.
-For example if you want to install mantidworkbench use the following command:</p>
+<p>On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from
+v6.13 onwards. Mamba will automatically determine  which package to install
+based on your device.</p>
+<p>Earlier versions of Mantid can still be installed on and used on Apple Silicon
+devices using Rosetta. You will need to <a class="reference external" href="https://support.apple.com/en-gb/102527">have Rosetta installed</a> and precede the setup commands with
+<code class="docutils literal notranslate"><span class="pre">CONDA_SUBDIR=osx-64</span></code>. For example, if you want to install mantidworkbench,
+use the following command:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">CONDA_SUBDIR</span><span class="o">=</span>osx-64<span class="w"> </span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
