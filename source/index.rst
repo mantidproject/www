@@ -13,7 +13,7 @@ experiments or as the result of simulation. The project provides:
 - a Python library, ``mantid``, providing custom high-performance algorithms and
   data structures for processing compatible data
 
-- a general-purpose graphical user interface, ``MantidWorkench``, for
+- a general-purpose graphical user interface, ``MantidWorkbench``, for
   visualisation of raw or processed data including
 
   - `matplotlib <https://matplotlib.org>`__-based plotting
