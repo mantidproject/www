@@ -81,7 +81,7 @@ To list the currrent depedencies being used in the nightly replace the channel n
 Installing MSlice package
 #########################
 
-Since version *6.14* of Mantid. Mslice is distributed as a separate, optional, conda package when
+Since version *6.14* of ``mantid``, ``mslice`` is distributed as a separate, optional, conda package when
 Mantid is installed from Conda. The package is hosted on the same channel as `mantid <https://anaconda.org/mantid>`__ on Anaconda.org.
 To install Mslice you can run the following command from Mantid's environment
 
