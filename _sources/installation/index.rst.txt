@@ -59,6 +59,9 @@ or the ``mantidworkbench`` package containing the graphical-user-interface
 
    mamba create -n mantid_env -c mantid mantidworkbench
 
+Note that from Mantid 6.14 onwards, Mslice is distributed as an optional conda package for conda installations
+of Mantid, and needs a :ref:`separate installation <mslice_conda>`.
+
 On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from
 v6.13 onwards. Mamba will automatically determine  which package to install
 based on your device.
