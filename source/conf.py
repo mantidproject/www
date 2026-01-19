@@ -3,7 +3,6 @@
 # Configuration file for the Sphinx documentation builder.
 import datetime
 
-
 # -- Project information -----------------------------------------------------
 project = "MantidProject landing page"
 copyright = (
