@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
   workflow_run:
     workflows: [Update latest release links]
     types:
@@ -31,6 +36,7 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
+        if: ${{ github.ref_name == 'main' }}
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: _build/html # The folder the action should deploy.
