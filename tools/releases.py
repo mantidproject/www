@@ -5,7 +5,6 @@ import datetime
 import requests
 from typing import List, Mapping
 
-
 # Constants
 GITHUB_API_ROOT = "https://api.github.com"
 GITHUB_REPOSITORY = "mantidproject/mantid"
