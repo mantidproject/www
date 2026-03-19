@@ -17,7 +17,7 @@ Issues
 .. _unable_to_find:
 
 Unable to find ``mantid`` or ``mantidworkbench``
-############################################
+################################################
 
 .. code-block:: sh
 
@@ -75,6 +75,25 @@ available through conda-forge require by running the following command
 
 To list the currrent depedencies being used in the nightly replace the channel name with ``mantid/label/nightly``.
 
+
+.. _mslice_conda:
+
+Installing MSlice package
+#########################
+
+Since version *6.14* of ``mantid``, ``mslice`` is distributed as a separate, optional, conda package when
+Mantid is installed from Conda. The package is hosted on the same channel as `mantid <https://anaconda.org/mantid>`__ on Anaconda.org.
+To install Mslice you can run the following command from Mantid's environment
+
+.. code-block:: sh
+
+	mamba install -c mantid mslice
+
+Or for the nightly version of mslice:
+
+.. code-block:: sh
+
+	mamba install -c mantid/label/nightly mslice
 
 .. _404_error:
 
