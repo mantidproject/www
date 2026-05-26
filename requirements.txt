@@ -1,7 +1,7 @@
 mantid-sphinx-theme @ https://github.com/mantidproject/mantid-sphinx-theme/archive/v0.2.0.zip
+pydata_sphinx_theme
 requests
 sphinx
 pytest
 pytest-mock
-black
 pre-commit
