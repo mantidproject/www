@@ -136,4 +136,4 @@ Deactivate your environment, reactivate it, and run ``workbench`` again.
 Still having problems?
 ######################
 
-If the above has not resolved your problem please post to our `community forum <https://forum.mantidproject.org>`_ or e-mail the team directly on ``mantid-help@mantidproject.org``.
+If the above has not resolved your problem please e-mail the team directly on ``mantid-help@mantidproject.org``.
