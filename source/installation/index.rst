@@ -29,9 +29,6 @@ channel on Anaconda.org. The available packages are:
 - ``mantidworkbench``: General-purpose graphical-user-interface for plotting,
   writing scripts etc.
 
-It is worth noting that versions of Mantid after v6.7 (including the nightly) use
-Python 3.10. Mantid v6.7 and before use Python 3.8.
-
 Latest Release
 ##############
 It is recommended to use Mambaforge to create and manage a Conda environment for Mantid. Using mamba is preferable over conda as it's faster and better at resolving dependencies.
