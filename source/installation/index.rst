@@ -59,8 +59,8 @@ or the ``mantidworkbench`` package containing the graphical-user-interface
 Note that from Mantid 6.14 onwards, Mslice is distributed as an optional conda package for conda installations
 of Mantid, and needs a :ref:`separate installation <mslice_conda>`.
 
-On macOS we provide both an Intel (x86) and Apple Silicon (ARM) package from
-v6.13 onwards. Mamba will automatically determine  which package to install
+On macOS we provide an Intel (x86) package up to v6.14, and Apple Silicon (ARM) package from
+v6.13 onwards. For v6.13 and v6.14 where packages are available for both architechtures, Mamba will automatically determine  which package to install
 based on your device.
 
 Earlier versions of Mantid can still be installed on and used on Apple Silicon
